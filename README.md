@@ -1,5 +1,7 @@
-# 石之家
+# 石之家楼层显示FFlogs数据
 为方便高难招募的便捷查询工具
+
+安装：https://greasyfork.org/zh-CN/scripts/482770
 
 ## 本地开发
 参考 https://unluckyninja.notion.site/Vite-e1ca6ae9949241a99014b84e8083712c
