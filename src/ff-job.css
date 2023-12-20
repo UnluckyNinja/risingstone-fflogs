@@ -1,0 +1,536 @@
+td UIForeground,td UIGlow {
+  display: none
+}
+
+td .aura {
+  width: auto!important;
+  border: 0!important
+}
+
+td .aura-filter-link .aura {
+  height: 24px
+}
+
+td .LimitBreak,td .LimitBreak.do-not-change-color-on-hover:hover {
+  color: #2599be!important
+}
+
+td .LimitBreak-behind-text,td .LimitBreak-bg {
+  background-color: #2599be!important
+}
+
+td .LimitBreak:hover {
+  color: #35a9ce!important
+}
+
+td .Scholar,td .Scholar.do-not-change-color-on-hover:hover {
+  color: #8657ff!important
+}
+
+td .Scholar:hover {
+  color: #a677ff!important
+}
+
+td .Scholar-behind-text,td .Scholar-bg {
+  background-color: #8657ff!important
+}
+
+td .Astrologian,td .Astrologian.do-not-change-color-on-hover:hover {
+  color: #ffe74a!important
+}
+
+td .Astrologian:hover {
+  color: #fff75a!important
+}
+
+td .Astrologian-bg {
+  background-color: #ffe74a!important
+}
+
+td .Astrologian-behind-text {
+  background-color: #ab9400!important
+}
+
+td .Monk,td .Monk.do-not-change-color-on-hover:hover,td .Pugilist,td .Pugilist.do-not-change-color-on-hover:hover {
+  color: #d69c00!important
+}
+
+td .Monk-behind-text,td .Monk-bg,td .Pugilist-behind-text,td .Pugilist-bg {
+  background-color: #d69c00!important
+}
+
+td .Monk:hover,td .Pugilist:hover {
+  color: #e6ac00!important
+}
+
+td .Ninja,td .Ninja.do-not-change-color-on-hover:hover,td .Rogue,td .Rogue.do-not-change-color-on-hover:hover {
+  color: #af1964!important
+}
+
+td .Ninja-behind-text,td .Ninja-bg,td .Rogue-behind-text,td .Rogue-bg {
+  background-color: #af1964!important
+}
+
+td .Ninja:hover,td .Rogue:hover {
+  color: #bf2974!important
+}
+
+td .Conjurer,td .Conjurer.do-not-change-color-on-hover:hover,td .WhiteMage,td .WhiteMage.do-not-change-color-on-hover:hover {
+  color: #fff0dc!important
+}
+
+td .Conjurer-bg,td .WhiteMage-bg {
+  background-color: #fff0dc!important
+}
+
+td .Conjurer-behind-text,td .WhiteMage-behind-text {
+  background-color: #afa08c!important
+}
+
+td .Conjurer:hover,td .WhiteMage:hover {
+  color: #fff!important
+}
+
+td .DarkKnight,td .DarkKnight.do-not-change-color-on-hover:hover {
+  color: #d126cc!important
+}
+
+td .DarkKnight-bg {
+  background-color: #d126cc!important
+}
+
+td .DarkKnight-behind-text {
+  background-color: #681366!important
+}
+
+td .DarkKnight:hover {
+  color: #e034dc!important
+}
+
+td .Gladiator,td .Gladiator.do-not-change-color-on-hover:hover,td .Paladin,td .Paladin.do-not-change-color-on-hover:hover {
+  color: #a8d2e6!important
+}
+
+td .Gladiator-bg,td .Paladin-bg {
+  background-color: #a8d2e6!important
+}
+
+td .Gladiator-behind-text,td .Paladin-behind-text {
+  background-color: #588296!important
+}
+
+td .Paladin:hover {
+  color: #b8e2f6!important
+}
+
+td .Archer,td .Archer.do-not-change-color-on-hover:hover,td .Bard,td .Bard.do-not-change-color-on-hover:hover {
+  color: #91ba5e!important
+}
+
+td .Archer-behind-text,td .Archer-bg,td .Bard-behind-text,td .Bard-bg {
+  background-color: #91ba5e!important
+}
+
+td .Archer:hover,td .Bard:hover {
+  color: #abd478!important
+}
+
+td .Dragoon,td .Dragoon.do-not-change-color-on-hover:hover,td .Lancer,td .Lancer.do-not-change-color-on-hover:hover {
+  color: #4164cd!important
+}
+
+td .Dragoon-behind-text,td .Dragoon-bg,td .Lancer-behind-text,td .Lancer-bg {
+  background-color: #4164cd!important
+}
+
+td .Dragoon:hover,td .Lancer:hover {
+  color: #5174dd!important
+}
+
+td .Marauder,td .Marauder.do-not-change-color-on-hover:hover,td .Warrior,td .Warrior.do-not-change-color-on-hover:hover {
+  color: #cf2621!important
+}
+
+td .Marauder-behind-text,td .Marauder-bg,td .Warrior-behind-text,td .Warrior-bg {
+  background-color: #cf2621!important
+}
+
+td .Marauder:hover,td .Warrior:hover {
+  color: #ff4641!important
+}
+
+td .Machinist,td .Machinist.do-not-change-color-on-hover:hover {
+  color: #6ee1d6!important
+}
+
+td .Machinist-behind-text,td .Machinist-bg {
+  background-color: #6ee1d6!important
+}
+
+td .Machinist:hover {
+  color: #7ef1e6!important
+}
+
+td .Arcanist,td .Arcanist.do-not-change-color-on-hover:hover,td .Arcanist:hover,td .Summoner,td .Summoner.do-not-change-color-on-hover:hover,td .Summoner:hover {
+  color: #2d9b78!important
+}
+
+td .Arcanist-behind-text,td .Arcanist-bg,td .Summoner-behind-text,td .Summoner-bg {
+  background-color: #2d9b78!important
+}
+
+td .BlackMage,td .BlackMage.do-not-change-color-on-hover:hover,td .Thaumaturge,td .Thaumaturge.do-not-change-color-on-hover:hover {
+  color: #a579d6!important
+}
+
+td .BlackMage-behind-text,td .BlackMage-bg,td .Thaumaturge-behind-text,td .Thaumaturge-bg {
+  background-color: #a579d6!important
+}
+
+td .BlackMage:hover,td .Thaumaturge:hover {
+  color: #b589e6!important
+}
+
+td .Reaper,td .Reaper.do-not-change-color-on-hover:hover,td .Reaper:hover {
+  color: #965a90!important
+}
+
+td .Reaper-behind-text,td .Reaper-bg {
+  background-color: #965a90!important
+}
+
+td .RedMage,td .RedMage.do-not-change-color-on-hover:hover {
+  color: #e87b7b!important
+}
+
+td .RedMage-behind-text,td .RedMage-bg {
+  background-color: #e87b7b!important
+}
+
+td .RedMage:hover {
+  color: #e89b9b!important
+}
+
+td .Sage,td .Sage.do-not-change-color-on-hover:hover {
+  color: #80a0f0!important
+}
+
+td .Sage-behind-text,td .Sage-bg {
+  background-color: #80a0f0!important
+}
+
+td .Sage:hover {
+  color: #90b0ff!important
+}
+
+td .Samurai,td .Samurai.do-not-change-color-on-hover:hover {
+  color: #e46d04!important
+}
+
+td .Samurai-behind-text,td .Samurai-bg {
+  background-color: #e46d04!important
+}
+
+td .Samurai:hover {
+  color: #f48db4!important
+}
+
+td .Dancer,td .Dancer.do-not-change-color-on-hover:hover {
+  color: #e2b0af!important
+}
+
+td .Dancer-behind-text,td .Dancer-bg {
+  background-color: #e2b0af!important
+}
+
+td .Dancer:hover {
+  color: #f2c0bf!important
+}
+
+td .Gunbreaker,td .Gunbreaker.do-not-change-color-on-hover:hover {
+  color: #998d50!important
+}
+
+td .Gunbreaker-behind-text,td .Gunbreaker-bg {
+  background-color: #796d30!important
+}
+
+td .Gunbreaker:hover {
+  color: #796d30!important
+}
+
+td .BlueMage,td .BlueMage.do-not-change-color-on-hover:hover,td .BlueMage:hover {
+  color: #2459ff!important
+}
+
+td .BlueMage-behind-text,td .BlueMage-bg {
+  background-color: #2459ff!important
+}
+
+td .sprite {
+  object-fit: cover
+}
+
+td .actor-sprite-Arcanist {
+  object-position: calc(0px*var(--size))0
+}
+
+td .actor-sprite-Archer {
+  object-position: calc(-1px*var(--size))0
+}
+
+td .actor-sprite-Astrologian {
+  object-position: calc(-2px*var(--size))0
+}
+
+td .actor-sprite-Bard {
+  object-position: calc(-3px*var(--size))0
+}
+
+td .actor-sprite-BlackMage {
+  object-position: calc(-4px*var(--size))0
+}
+
+td .actor-sprite-BlueMage {
+  object-position: calc(-5px*var(--size))0
+}
+
+td .actor-sprite-Boss {
+  object-position: calc(-6px*var(--size))0
+}
+
+td .actor-sprite-Conjurer {
+  object-position: calc(-7px*var(--size))0
+}
+
+td .actor-sprite-Dancer {
+  object-position: calc(-8px*var(--size))0
+}
+
+td .actor-sprite-DarkKnight {
+  object-position: calc(-9px*var(--size))0
+}
+
+td .actor-sprite-Dragoon {
+  object-position: calc(-10px*var(--size))0
+}
+
+td .actor-sprite-Gladiator {
+  object-position: calc(-11px*var(--size))0
+}
+
+td .actor-sprite-Gunbreaker {
+  object-position: calc(-12px*var(--size))0
+}
+
+td .actor-sprite-Lancer {
+  object-position: calc(-13px*var(--size))0
+}
+
+td .actor-sprite-LimitBreak {
+  object-position: calc(-14px*var(--size))0
+}
+
+td .actor-sprite-Machinist {
+  object-position: calc(-15px*var(--size))0
+}
+
+td .actor-sprite-Marauder {
+  object-position: calc(-16px*var(--size))0
+}
+
+td .actor-sprite-Monk {
+  object-position: calc(-17px*var(--size))0
+}
+
+td .actor-sprite-NPC {
+  object-position: calc(-19px*var(--size))0
+}
+
+td .actor-sprite-Ninja {
+  object-position: calc(-18px*var(--size))0
+}
+
+td .actor-sprite-Paladin {
+  object-position: calc(-20px*var(--size))0
+}
+
+td .actor-sprite-Pet {
+  object-position: calc(-21px*var(--size))0
+}
+
+td .actor-sprite-Pugilist {
+  object-position: calc(-22px*var(--size))0
+}
+
+td .actor-sprite-Reaper {
+  object-position: calc(-23px*var(--size))0
+}
+
+td .actor-sprite-RedMage {
+  object-position: calc(-24px*var(--size))0
+}
+
+td .actor-sprite-Rogue {
+  object-position: calc(-25px*var(--size))0
+}
+
+td .actor-sprite-Sage {
+  object-position: calc(-26px*var(--size))0
+}
+
+td .actor-sprite-Samurai {
+  object-position: calc(-27px*var(--size))0
+}
+
+td .actor-sprite-Scholar {
+  object-position: calc(-28px*var(--size))0
+}
+
+td .actor-sprite-Summoner {
+  object-position: calc(-29px*var(--size))0
+}
+
+td .actor-sprite-Thaumaturge {
+  object-position: calc(-30px*var(--size))0
+}
+
+td .actor-sprite-Warrior {
+  object-position: calc(-31px*var(--size))0
+}
+
+td .actor-sprite-WhiteMage {
+  object-position: calc(-32px*var(--size))0
+}
+
+td .actor-sprite-Arcanist-secondary {
+  object-position: calc(0px*var(--size))0
+}
+
+td .actor-sprite-Archer-secondary {
+  object-position: calc(-1px*var(--size))0
+}
+
+td .actor-sprite-Astrologian-secondary {
+  object-position: calc(-2px*var(--size))0
+}
+
+td .actor-sprite-Bard-secondary {
+  object-position: calc(-3px*var(--size))0
+}
+
+td .actor-sprite-BlackMage-secondary {
+  object-position: calc(-4px*var(--size))0
+}
+
+td .actor-sprite-Conjurer-secondary {
+  object-position: calc(-5px*var(--size))0
+}
+
+td .actor-sprite-Dancer-secondary {
+  object-position: calc(-6px*var(--size))0
+}
+
+td .actor-sprite-DarkKnight-secondary {
+  object-position: calc(-7px*var(--size))0
+}
+
+td .actor-sprite-Dragoon-secondary {
+  object-position: calc(-8px*var(--size))0
+}
+
+td .actor-sprite-Gladiator-secondary {
+  object-position: calc(-9px*var(--size))0
+}
+
+td .actor-sprite-Gunbreaker-secondary {
+  object-position: calc(-10px*var(--size))0
+}
+
+td .actor-sprite-Lancer-secondary {
+  object-position: calc(-11px*var(--size))0
+}
+
+td .actor-sprite-Machinist-secondary {
+  object-position: calc(-12px*var(--size))0
+}
+
+td .actor-sprite-Marauder-secondary {
+  object-position: calc(-13px*var(--size))0
+}
+
+td .actor-sprite-Monk-secondary {
+  object-position: calc(-14px*var(--size))0
+}
+
+td .actor-sprite-Ninja-secondary {
+  object-position: calc(-15px*var(--size))0
+}
+
+td .actor-sprite-Paladin-secondary {
+  object-position: calc(-16px*var(--size))0
+}
+
+td .actor-sprite-Pugilist-secondary {
+  object-position: calc(-17px*var(--size))0
+}
+
+td .actor-sprite-Reaper-secondary {
+  object-position: calc(-18px*var(--size))0
+}
+
+td .actor-sprite-RedMage-secondary {
+  object-position: calc(-19px*var(--size))0
+}
+
+td .actor-sprite-Rogue-secondary {
+  object-position: calc(-20px*var(--size))0
+}
+
+td .actor-sprite-Role-1-secondary {
+  object-position: calc(-21px*var(--size))0
+}
+
+td .actor-sprite-Role-2-secondary {
+  object-position: calc(-22px*var(--size))0
+}
+
+td .actor-sprite-Role-3-secondary {
+  object-position: calc(-23px*var(--size))0
+}
+
+td .actor-sprite-Role-4-secondary {
+  object-position: calc(-24px*var(--size))0
+}
+
+td .actor-sprite-Role-5-secondary {
+  object-position: calc(-25px*var(--size))0
+}
+
+td .actor-sprite-Sage-secondary {
+  object-position: calc(-26px*var(--size))0
+}
+
+td .actor-sprite-Samurai-secondary {
+  object-position: calc(-27px*var(--size))0
+}
+
+td .actor-sprite-Scholar-secondary {
+  object-position: calc(-28px*var(--size))0
+}
+
+td .actor-sprite-Summoner-secondary {
+  object-position: calc(-29px*var(--size))0
+}
+
+td .actor-sprite-Thaumaturge-secondary {
+  object-position: calc(-30px*var(--size))0
+}
+
+td .actor-sprite-Warrior-secondary {
+  object-position: calc(-31px*var(--size))0
+}
+
+td .actor-sprite-WhiteMage-secondary {
+  object-position: calc(-32px*var(--size))0
+}
