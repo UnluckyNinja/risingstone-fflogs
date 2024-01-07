@@ -62,7 +62,7 @@ export default defineConfig({
 // ==UserScript==
 // @name         石之家楼层显示fflogs数据
 // @description  队伍招募时便捷查询，请勿滥用
-// @version      2023-12-20
+// @version      2024-01-07
 // @icon         https://ff14risingstones.web.sdo.com/pc/favicon.ico
 // @namespace    https://github.com/UnluckyNinja
 // @homepage     https://github.com/UnluckyNinja/risingstone-fflogs

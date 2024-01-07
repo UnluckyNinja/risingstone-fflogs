@@ -64,7 +64,7 @@ export async function getCharacterID(serverName: string, charName: string) {
     anonymous: true,
     "method": "GET",
   }).catch((e: any) => console.error(e));
-  console.log(res)
+
   const text = res.responseText // await res.text()
   const match = text.match(/var characterID\s?=\s?(\d+);/)
   if (!match) {

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import LogsTable from './components/LogsTable.vue';
 import { getLogsProfileURL } from './utils/fflogs'
 
 const props = withDefaults(defineProps<{
@@ -57,7 +56,19 @@ watch(displayPanel, (newVal) => {
     <div class="trigger text-cyan-7 cursor-pointer">{{ propsValid ? '鼠标悬浮此处查看FFlogs数据' : '未能识别角色名或服务器' }}</div>
     <div ref="panel" v-show="displayPanel" class="absolute left-0 top-0 border border-solid rounded p-2 bg-white z-10">
       <!-- <LogsTable :char-name="props.charName" :server-name="props.serverName" /> -->
-      {{ status }}
+      <div>
+        <span class="font-bold">
+          服务器：
+        </span>
+        {{ props.serverName }}
+        <br>
+        <span class="font-bold">角色名：</span>
+        {{ props.charName }}
+      </div>
+
+      <div>
+        {{ status }}
+      </div>
       <a v-if="fetched" :href="getLogsProfileURL(props.serverName, props.charName)" target="_blank">查看角色FFlogs主页</a>
       <div ref="table" class="relative bg-white z-20"></div>
     </div>
