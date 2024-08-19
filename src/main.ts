@@ -89,6 +89,7 @@ const rootObserver = new MutationObserver((mutations, obs) => {
   }
 })
 
+console.log('油猴石之家脚本已运行')
 const commentEle = document.querySelector('#comment')
 if (commentEle) {
   console.log('找到评论列表元素，处理已有评论')

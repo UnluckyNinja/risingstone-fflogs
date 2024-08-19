@@ -32,7 +32,7 @@ watch(displayPanel, (newVal) => {
     promise.value = getCharacterID(props.serverName, props.charName).then(ID => {
       if (!ID) {
         status.value = '未查询到该角色的记录'
-        throw 'Not found'
+        throw new Error('Not found')
       }
       return getCharacterLogsData(ID, gameVersions[0].children[0].id)
     }).then(parsedTable => {

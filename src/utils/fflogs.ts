@@ -31,6 +31,7 @@ const gameVersion6 = [
   { id: '46', name: "幻巧战" },
   { id: '51', name: "迷宫挑战（异闻）" },
   { id: '41', name: "迷宫挑战 (90级)" },
+  { id: '56', name: "荣华神域塔利亚" },
   { id: '52', name: "喜悦神域欧芙洛绪涅" },
   { id: '47', name: "灿烂神域阿格莱亚" },
   { id: '48', name: "女王古殿贡希尔德神庙" }
@@ -40,6 +41,9 @@ export const gameVersions = [
   { children: gameVersion6, name: '晓月之终途' },
   { children: gameVersion5, name: '暗影之逆焰' },
 ] as const
+
+let token: string | null = null
+let signature: string | null = null
 
 export function getLogsProfileURL(serverName: string, charName: string) {
   return `https://cn.fflogs.com/character/CN/${serverName}/${charName}`
@@ -61,11 +65,24 @@ export async function getCharacterID(serverName: string, charName: string) {
       "sec-fetch-user": "?1",
       "upgrade-insecure-requests": "1"
     },
-    anonymous: true,
     "method": "GET",
   }).catch((e: any) => console.error(e));
 
   const text = res.responseText // await res.text()
+  const t = text.match(/<meta name="csrf-token" content="(\w+)">/)
+  if(!t){
+    console.error('未找到token，后续请求可能无法成功')
+  } else {
+    token = encodeURIComponent(t[1])
+    console.log(token)
+  }
+  const s = text.match(/function loadZoneTable\(\)\s?{(?:.|\n)*?'&signature='\s?\+\s?'(\w+)'/)
+  if(!t){
+    console.error('未找到signature，后续请求可能无法成功')
+  } else {
+    signature = s[1]
+    console.log(signature)
+  }
   const match = text.match(/var characterID\s?=\s?(\d+);/)
   if (!match) {
     // no data
@@ -75,23 +92,24 @@ export async function getCharacterID(serverName: string, charName: string) {
 }
 
 export async function getCharacterLogsData(charID: string, zoneID: string, dpsType = 'rdps') {
+
+  if (!token) throw new Error('未获取到有效token，无法进行请求')
+
   const res = await GM.xmlHttpRequest({
-    url: `https://cn.fflogs.com/character/rankings-zone/${charID}/dps/3/${zoneID}/0/5000/0/-1/Any/rankings/0/0?dpstype=${dpsType}&class=Any`,
+    url: `https://cn.fflogs.com/character/rankings-zone/${charID}/dps/3/${zoneID}/0/5000/0/-1/Any/rankings/0/0?dpstype=${dpsType}&class=Any&signature=${signature}`,
     "headers": {
       "accept": "text/html, */*; q=0.01",
+      "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
       "accept-language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6,en-GB;q=0.5,ja;q=0.4",
       "origin": "https://cn.fflogs.com/",
       'referer': 'https://cn.fflogs.com/',
-      "sec-ch-ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Microsoft Edge\";v=\"120\"",
-      "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "sec-fetch-dest": "empty",
       "sec-fetch-mode": "cors",
       "sec-fetch-site": "same-origin",
       "x-requested-with": "XMLHttpRequest"
     },
-    anonymous: true,
-    "method": "GET",
+    data: `_token=${token}`,
+    "method": "POST",
   }).catch((e: any) => console.error(e));
 
   const text = res.responseText // await res.text()
